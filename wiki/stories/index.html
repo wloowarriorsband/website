@@ -1,258 +1,687 @@
 <html>
-<head>
-	<title>Warriorpedia - Lore</title>
-	<meta content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="wiki.css" type='text/css'/>
-	<link rel='icon' href="../../images/not_transparent.webp"/>
-	<script src='wiki.js'></script>
-</head>
-<body>
-<header>
-	<div class="logo">
-		<a href='https://warriorsband.uwaterloo.ca/wiki/main/index.html'><img src='wikiball.webp' alt="Logo" height='70px'></a>
-		
-	</div>
-	<div class="search-box">
-        <form class="form">
-            <input id="search" type="search" placeholder="Search Warriorpedia...">
-        </form>
-    </div>
-	<div class="user-links">
-	<a href='https://warriorsband.uwaterloo.ca/wiki/all_page/index.html'><img src="All Pages.webp" height='80px'></a>
-	<a href='https://forms.gle/JdvDitbNV2Hb9iUu8'><image src='edit.webp' height='80px'></a>
-	<a href='https://warriorsband.uwaterloo.ca/'><img src="website.webp" height='80px'></a>
-	</div>
-</header>
-<div id="results-container">
-    <ul id="list">
-    <!-- Search results will be added here dynamically -->
-    </ul>    
-</div>
-<div class="main-content">
-	<aside class="left-sidebar">
-		<div class="accordian">
+    <head>
+        <title>Warriorpedia - Lore</title>
+        <meta content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="wiki.css" type='text/css' />
+        <link rel='icon' href="../../images/ui/not_transparent.jpg" />
+        <script src='wiki.js'></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a
+                    href='https://warriorsband.uwaterloo.ca/wiki/main/index.html'><img
+                        src='wikiball.png' alt="Logo" height='70px'></a>
 
-			<details class="accordian-item" open="">
-				<summary class="accordian-item-summary"><a href='#stories' class='barlink'>Stories </a></summary>
-				<ul>
-				<li><a href='#25' class='barlink'>25th Anniversary Reunion</a></li>
-				<li><a href='#45' class='barlink'>45th Anniversary Reunion</a></li>
-				<li><a href='#50' class='barlink'>50th Anniversary Reunion</a></li>
-				<li><a href='#blt' class='barlink'>Band Lounge Time</a></li>
-				<li><a href='#do' class='barlink'>Drumline Ontario</a></li>
-				<li><a href='#mmr' class='barlink'>McMaster Rivalry</a></li>
-				<li><a href='#wbs' class='barlink'>Women's Basketball Situation</a></li>
-				<li><a href='#tti' class='barlink'>The Thermostat Incident</a></li>
-				<li><a href='#hgs' class='barlink'>Hockey Game Shenanigans</a></li>
-				<li><a href='#umb' class='barlink'>Updated Music Books</a></li>
-				<li><a href='#vhs' class='barlink'>VHS Tapes</a></li>
-				<li><a href='#tmu' class='barlink'>TMU Baseball</a></li>
-				<li><a href='#ob' class='barlink'>Olympic Basketball</a></li>
-				<li><a href='#h2023' class='barlink'>Halloween 2023</a></li>
-				<li><a href='#f2024' class='barlink'>Fall 2024 Elections</a></li>
-				<li><a href='#c2022' class='barlink'>Christmas Parade 2022</a></li>
-				<li><a href='#ks2023' class='barlink'>2023 Kitchener Santa Claus Parade</a></li>
-				<li><a href='#mfm' class='barlink'>Music From McGill</a></li>
-				<li><a href='#dme' class='barlink'>Death March to Elora</a></li>
-				<li><a href='#r' class='barlink'>Reddit</a></li>
-				<li><a href='#wbce' class='barlink'>Warriors Band Client Ensembles</a></li>
+            </div>
+            <div class="search-box">
+                <form class="form">
+                    <input id="search" type="search"
+                        placeholder="Search Warriorpedia...">
+                </form>
+            </div>
+            <div class="user-links">
+                <a
+                    href='https://warriorsband.uwaterloo.ca/wiki/all_page/index.html'><img
+                        src="All Pages.png" height='80px'></a>
+                <a href='https://forms.gle/JdvDitbNV2Hb9iUu8'><image
+                        src='edit.png' height='80px'></a>
+                <a href='https://warriorsband.uwaterloo.ca/'><img
+                        src="website.png" height='80px'></a>
+            </div>
+        </header>
+        <div id="results-container">
+            <ul id="list">
+                <!-- Search results will be added here dynamically -->
+            </ul>
+        </div>
+        <div class="main-content">
+            <aside class="left-sidebar">
+                <div class="accordian">
 
-				</ul>
-			</details>
-			<details class="accordian-item" open="">
-				<summary class="accordian-item-summary"><a href='#missing' class='barlink'>Missing Stories </a></summary>
-				<ul>
-				<li><a href='#kick' class='barlink'>Kickoff</a></li>
-				<li><a href='#mme' class='barlink'>Matt's Massive Erection</a></li>
-				<li><a href='#pl' class='barlink'>Playboy Letter</a></li>
-				<li><a href='#tionb' class='barlink'>The Impeachment of Nick Boyko</a></li>
-				<li><a href='#slc2013' class='barlink'>Trip to SLC 2013</a></li>
-				<li><a href='#ct' class='barlink'>Cassette Tapes</a></li>
-				</ul>
-			</details>
-		</div>
-	</aside>
-<div class="right-content">
-<h1 id="stories">Stories</h1>
-Here is a page dedicated to the stories of the Band. This is the lore that defines the band and all its whackiness! Enjoy!
-<br><br>
-There is no particular order to these stories. This is just a compilation of all the stories from the old wiki and band alumni/members.
+                    <details class="accordian-item" open>
+                        <summary class="accordian-item-summary"><a
+                                href='#stories' class='barlink'>Stories
+                            </a></summary>
+                        <ul>
+                            <li><a href='#25' class='barlink'>25th Anniversary Reunion</a></li>
+                            <li><a href='#45' class='barlink'>45th Anniversary Reunion</a></li>
+                            <li><a href='#50' class='barlink'>50th Anniversary Reunion</a></li>
+                            <li><a href='#blt' class='barlink'>Band Lounge Time</a></li>
+                            <li><a href='#do' class='barlink'>Drumline Ontario</a></li>
+                            <li><a href='#mmr' class='barlink'>McMaster Rivalry</a></li>
+                            <li><a href='#wbs' class='barlink'>Women's Basketball Situation</a></li>
+                            <li><a href='#tti' class='barlink'>The Thermostat Incident</a></li>
+                            <li><a href='#hgs' class='barlink'>Hockey Game Shenanigans</a></li>
+                            <li><a href='#umb' class='barlink'>Updated Music Books</a></li>
+                            <li><a href='#vhs' class='barlink'>VHS Tapes</a></li>
+                            <li><a href='#tmu' class='barlink'>TMU Baseball</a></li>
+                            <li><a href='#ob' class='barlink'>Olympic Basketball</a></li>
+                            <li><a href='#h2023' class='barlink'>Halloween 2023</a></li>
+                            <li><a href='#f2024' class='barlink'>Fall 2024 Elections</a></li>
+                            <li><a href='#c2022' class='barlink'>Christmas Parade 2022</a></li>
+                            <li><a href='#ks2023' class='barlink'>2023 Kitchener Santa Claus Parade</a></li>
+                            <li><a href='#mfm' class='barlink'>Music From McGill</a></li>
+                            <li><a href='#dme' class='barlink'>Death March to Elora</a></li>
+                            <li><a href='#r' class='barlink'>Reddit</a></li>
+                            <li><a href='#wbce' class='barlink'>Warriors Band Client Ensembles</a></li>
 
-<h2 id='25'>25th Anniversary Reunion</h2>
-The Warriors Band 25th anniversary reunion took place from <a href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#year'>0991-68</a> through <a href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#year'>0991-70</a>. Over 80 members, past, present, and future, of the Warriors Band 
-showed up to commemorate the occasion and partake in nostalgia and memorabilia. A <a href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#history'>history</a> of the Warriors Band was also printed for the occasion. 
-They also attended the final of the Naismith Classic Basketball Tournament.
-<br><br>
+                        </ul>
+                    </details>
+                    <details class="accordian-item" open>
+                        <summary class="accordian-item-summary"><a
+                                href='#missing' class='barlink'>Missing Stories
+                            </a></summary>
+                        <ul>
+                            <li><a href='#kick' class='barlink'>Kickoff</a></li>
+                            <li><a href='#mme' class='barlink'>Matt's Massive Erection</a></li>
+                            <li><a href='#pl' class='barlink'>Playboy Letter</a></li>
+                            <li><a href='#tionb' class='barlink'>The Impeachment of Nick Boyko</a></li>
+                            <li><a href='#slc2013' class='barlink'>Trip to SLC 2013</a></li>
+                            <li><a href='#ct' class='barlink'>Cassette Tapes</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </aside>
+            <div class="right-content">
+                <h1 id="stories">Stories</h1>
+                Here is a page dedicated to the stories of the Band. This is the
+                lore that defines the band and all its whackiness! Enjoy!
+                <br><br>
+                There is no particular order to these stories. This is just a
+                compilation of all the stories from the old wiki and band
+                alumni/members.
 
-<h2 id='45'>45th Anniversary Reunion</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OTl4BG5WH84?si=wdRk4VDeFTVhaVL3" title="YouTube video player" frameborder="0" allow="accelerometer; 
-autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<br><br>
-The band had another reunion to celebrate 45 years of being as loud as possible. 
-<br><br>
+                <h2 id='25'>25th Anniversary Reunion</h2>
+                The Warriors Band 25th anniversary reunion took place from <a
+                    href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#year'>0991-68</a>
+                through <a
+                    href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#year'>0991-70</a>.
+                Over 80 members, past, present, and future, of the Warriors Band
+                showed up to commemorate the occasion and partake in nostalgia
+                and memorabilia. A <a
+                    href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#history'>history</a>
+                of the Warriors Band was also printed for the occasion.
+                They also attended the final of the Naismith Classic Basketball
+                Tournament.
+                <br><br>
 
-<h2 id='50'>50th Anniversary Reunion</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rrtTEFtmcdU?si=OGra6ShGPrbOzeJS" title="YouTube video player" frameborder="0" allow="accelerometer; 
-autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
-The 50th anniversary reunion of the Warriors Band was held on <a href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#year'>1169-38</a> under the guidance of <a href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#chief'>CCWB</a> <a href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#nb'>Nicholas Boyko</a>. There were four parts to the event: 
-mingling and memorabilia showcasing, practice, a basketball game, and dinner.
-<h3>Mingling</h3>
-First, band members past and present were able to get to know each other and talk about life and the band. 
-<h3>Practice</h3>
-Members prepared for the basketball game by briefly practicing in the parking lot area outside PAC 1001.
-<h3>Basketball Game</h3>
-Members cheered on the Waterloo Warriors in one of their games in the Naismith Classic Basketball Tournament.
-<h3>Dinner</h3>
-After the band members went to dinner. The details of where are as of now unknown.
-<br><br>
+                <h2 id='45'>45th Anniversary Reunion</h2>
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/OTl4BG5WH84?si=wdRk4VDeFTVhaVL3"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+                <br><br>
+                The band had another reunion to celebrate 45 years of being as
+                loud as possible.
+                <br><br>
 
-<h2 id='blt'>Band Lounge Time</h2>
-Band Lounge Times, or BLTs, are periods outside of practice throughout the week when the band room is open for members to socialize or practice. These periods are usually
- consistent week by week. BLTs are set and run by the current executive team, as only the <a href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#exec'>executives</a> have the privilege to open the room.
-<br><br>
-BLTs are not always run every term. It is up to the executive team of that term to decide to run BLTs that term.
-<br><br>
+                <h2 id='50'>50th Anniversary Reunion</h2>
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/rrtTEFtmcdU?si=OGra6ShGPrbOzeJS"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe><br><br>
+                The 50th anniversary reunion of the Warriors Band was held on <a
+                    href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#year'>1169-38</a>
+                under the guidance of <a
+                    href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#chief'>CCWB</a>
+                <a
+                    href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#nb'>Nicholas
+                    Boyko</a>. There were four parts to the event:
+                mingling and memorabilia showcasing, practice, a basketball
+                game, and dinner.
+                <h3>Mingling</h3>
+                First, band members past and present were able to get to know
+                each other and talk about life and the band.
+                <h3>Practice</h3>
+                Members prepared for the basketball game by briefly practicing
+                in the parking lot area outside PAC 1001.
+                <h3>Basketball Game</h3>
+                Members cheered on the Waterloo Warriors in one of their games
+                in the Naismith Classic Basketball Tournament.
+                <h3>Dinner</h3>
+                After the band members went to dinner. The details of where are
+                as of now unknown.
+                <br><br>
 
-<h2 id='do'>Drumline Ontario</h2>
-Drumline Ontario was an annual provincial championship for music groups in Southwestern Ontario, including drumlines and bands. The Warriors band began performing at their first 
-contest for Drumline Ontario in 2016, where they emerged victorious against <a href='#mmr'>McMaster</a> and emerged rather less victorious in the three succeeding contests. Drumline Ontario 
-was discontinued in <a href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#year'>1179</a>.
-<h3>Warriors Band Scores</h3>
-<table class='regtable'>
-<tr class='regtable'>
-<th class='regtable'>Date</th>
-<th class='regtable'>Event</th>
-<th class='regtable'>Score</th>
-</tr>
-<tr class='regtable'>
-<td class='regtable'>116?
-<td class='regtable'>
-<td class='regtable'>
-</tr>
-<tr class='regtable'>
-<td class='regtable'>116?
-<td class='regtable'>
-<td class='regtable'>
-</tr>
-<tr class='regtable'>
-<td class='regtable'>1171-91
-<td class='regtable'>Grimsy Contest
-<td class='regtable'>66.6
-</tr>
-<tr class='regtable'>
-<td class='regtable'>1175-7
-<td class='regtable'>Provincial Championship
-<td class='regtable'>69.7
-</tr>
-</table>
-<br><br>
+                <h2 id='blt'>Band Lounge Time</h2>
+                Band Lounge Times, or BLTs, are periods outside of practice
+                throughout the week when the band room is open for members to
+                socialize or practice. These periods are usually
+                consistent week by week. BLTs are set and run by the current
+                executive team, as only the <a
+                    href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#exec'>executives</a>
+                have the privilege to open the room.
+                <br><br>
+                BLTs are not always run every term. It is up to the executive
+                team of that term to decide to run BLTs that term.
+                <br><br>
 
-<h2 id='mmr'>McMaster Rivalry</h2>
-McMaster University's Marching Band is the marching band of McMaster University. Drumline Ontario thought they were better than us. We disagree.
-<br><br>
-We beat McMaster at Drumline Ontario once. We also played an arrangement of Fancy together at a football game in <a href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#year'>1161</a>.
-<br><br>
+                <h2 id='do'>Drumline Ontario</h2>
+                Drumline Ontario was an annual provincial championship for music
+                groups in Southwestern Ontario, including drumlines and bands.
+                The Warriors band began performing at their first
+                contest for Drumline Ontario in 2016, where they emerged
+                victorious against <a href='#mmr'>McMaster</a> and emerged
+                rather less victorious in the three succeeding contests.
+                Drumline Ontario
+                was discontinued in <a
+                    href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#year'>1179</a>.
+                <h3>Warriors Band Scores</h3>
+                <table class='regtable'>
+                    <tr class='regtable'>
+                        <th class='regtable'>Date</th>
+                        <th class='regtable'>Event</th>
+                        <th class='regtable'>Score</th>
+                    </tr>
+                    <tr class='regtable'>
+                        <td class='regtable'>116?
+                            <td class='regtable'>
+                                <td class='regtable'>
+                                </tr>
+                                <tr class='regtable'>
+                                    <td class='regtable'>116?
+                                        <td class='regtable'>
+                                            <td class='regtable'>
+                                            </tr>
+                                            <tr class='regtable'>
+                                                <td class='regtable'>1171-91
+                                                    <td class='regtable'>Grimsy
+                                                        Contest
+                                                        <td
+                                                            class='regtable'>66.6
+                                                        </tr>
+                                                        <tr class='regtable'>
+                                                            <td
+                                                                class='regtable'>1175-7
+                                                                <td
+                                                                    class='regtable'>Provincial
+                                                                    Championship
+                                                                    <td
+                                                                        class='regtable'>69.7
+                                                                    </tr>
+                                                                </table>
+                                                                <br><br>
 
-<h2 id='wbs'>Women's Basketball Situation</h2>
-In <a href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#year'>1231</a> the band got banned from playing <a href='https://warriorsband.uwaterloo.ca/wiki/songs/index.html#usaf'>USAF</a> while the game is running. Since by <a href='https://warriorsband.uwaterloo.ca/wiki/cons/index.html#cons'>constitution</a> 
-the band has to play <a href='https://warriorsband.uwaterloo.ca/wiki/songs/index.html#usaf'>USAF</a> constantly before the first basket, the band has since stopped attending women's basketball games.
-<br><br>
+                                                                <h2
+                                                                    id='mmr'>McMaster
+                                                                    Rivalry</h2>
+                                                                McMaster
+                                                                University's
+                                                                Marching Band is
+                                                                the marching
+                                                                band of McMaster
+                                                                University.
+                                                                Drumline Ontario
+                                                                thought they
+                                                                were better than
+                                                                us. We disagree.
+                                                                <br><br>
+                                                                We beat McMaster
+                                                                at Drumline
+                                                                Ontario once. We
+                                                                also played an
+                                                                arrangement of
+                                                                Fancy together
+                                                                at a football
+                                                                game in <a
+                                                                    href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#year'>1161</a>.
+                                                                <br><br>
 
-<h2 id='tti'>The Thermostat Incident</h2>
-<iframe width="560" height="315" src="video-1648769307.mp4"></iframe>
-<br><br>
-In <a href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#year'>1221</a>, while playing a trombone, a member kicks her foot which launches their shoe towards the <a href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#chief'>CCWB</a>. The <a href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#chief'>CCWB</a> dodges, and the shoe hits the thermostat instead. 
-<br><br>
+                                                                <h2
+                                                                    id='wbs'>Women's
+                                                                    Basketball
+                                                                    Situation</h2>
+                                                                In <a
+                                                                    href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#year'>1231</a>
+                                                                the band got
+                                                                banned from
+                                                                playing <a
+                                                                    href='https://warriorsband.uwaterloo.ca/wiki/songs/index.html#usaf'>USAF</a>
+                                                                while the game
+                                                                is running.
+                                                                Since by <a
+                                                                    href='https://warriorsband.uwaterloo.ca/wiki/cons/index.html#cons'>constitution</a>
+                                                                the band has to
+                                                                play <a
+                                                                    href='https://warriorsband.uwaterloo.ca/wiki/songs/index.html#usaf'>USAF</a>
+                                                                constantly
+                                                                before the first
+                                                                basket, the band
+                                                                has since
+                                                                stopped
+                                                                attending
+                                                                women's
+                                                                basketball
+                                                                games.
+                                                                <br><br>
 
-<h2 id='hgs'>Hockey Game Shenanigans</h2>
-In <a href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#nb'>Nick Boyko's</a> last term as a student, the band was asked to play at a Women's Hockey Playoff as they hadn't played at a game all term. The band showed up and started
-playing, only to be told to stop by the team after the first period. The band saw no point in being there if they cannot play so they left, followed by a chunk of the crowd.
-<br>
-Our team lost that game.
-<br><br>
-Another time at a hockey game there was such a major blowout the band stood outside the other team's bus playing "Na Na" until they left.
-<br><br>
-One time the team went to a game at Brock University (8-1), and the band stood by the doorway for around 20 minutes playing music as people left.
-<br><br>
+                                                                <h2 id='tti'>The
+                                                                    Thermostat
+                                                                    Incident</h2>
+                                                                <iframe
+                                                                    width="560"
+                                                                    height="315"
+                                                                    src="video-1648769307.mp4"></iframe>
+                                                                <br><br>
+                                                                In <a
+                                                                    href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#year'>1221</a>,
+                                                                while playing a
+                                                                trombone, a
+                                                                member kicks her
+                                                                foot which
+                                                                launches their
+                                                                shoe towards the
+                                                                <a
+                                                                    href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#chief'>CCWB</a>.
+                                                                The <a
+                                                                    href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#chief'>CCWB</a>
+                                                                dodges, and the
+                                                                shoe hits the
+                                                                thermostat
+                                                                instead.
+                                                                <br><br>
 
-<h2 id='umb'>Updated Music Books</h2>
-In <a href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#year'>1241</a> a major overhaul of the music books led by that term's <a href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#quart'>Quartermaster</a> happened. Most of the band members of that time showed up. The updates included getting rid of 
-unplayed/badly written music for more known and better written songs, broken pages were fixed, and a general order to the music was in place. The operation spanned all of 
-DC 1351, as there were many books to make. One station was cutting the sheet music out/to size, another was placing music in the plastic covers, and the last group was placing 
-the plastic in order and by book. It took many hours and was worth it.
-<br><br>
+                                                                <h2
+                                                                    id='hgs'>Hockey
+                                                                    Game
+                                                                    Shenanigans</h2>
+                                                                In <a
+                                                                    href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#nb'>Nick
+                                                                    Boyko's</a>
+                                                                last term as a
+                                                                student, the
+                                                                band was asked
+                                                                to play at a
+                                                                Women's Hockey
+                                                                Playoff as they
+                                                                hadn't played at
+                                                                a game all term.
+                                                                The band showed
+                                                                up and started
+                                                                playing, only to
+                                                                be told to stop
+                                                                by the team
+                                                                after the first
+                                                                period. The band
+                                                                saw no point in
+                                                                being there if
+                                                                they cannot play
+                                                                so they left,
+                                                                followed by a
+                                                                chunk of the
+                                                                crowd.
+                                                                <br>
+                                                                Our team lost
+                                                                that game.
+                                                                <br><br>
+                                                                Another time at
+                                                                a hockey game
+                                                                there was such a
+                                                                major blowout
+                                                                the band stood
+                                                                outside the
+                                                                other team's bus
+                                                                playing "Na Na"
+                                                                until they left.
+                                                                <br><br>
+                                                                One time the
+                                                                team went to a
+                                                                game at Brock
+                                                                University
+                                                                (8-1), and the
+                                                                band stood by
+                                                                the doorway for
+                                                                around 20
+                                                                minutes playing
+                                                                music as people
+                                                                left.
+                                                                <br><br>
 
+                                                                <h2
+                                                                    id='umb'>Updated
+                                                                    Music
+                                                                    Books</h2>
+                                                                In <a
+                                                                    href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#year'>1241</a>
+                                                                a major overhaul
+                                                                of the music
+                                                                books led by
+                                                                that term's <a
+                                                                    href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#quart'>Quartermaster</a>
+                                                                happened. Most
+                                                                of the band
+                                                                members of that
+                                                                time showed up.
+                                                                The updates
+                                                                included getting
+                                                                rid of
+                                                                unplayed/badly
+                                                                written music
+                                                                for more known
+                                                                and better
+                                                                written songs,
+                                                                broken pages
+                                                                were fixed, and
+                                                                a general order
+                                                                to the music was
+                                                                in place. The
+                                                                operation
+                                                                spanned all of
+                                                                DC 1351, as
+                                                                there were many
+                                                                books to make.
+                                                                One station was
+                                                                cutting the
+                                                                sheet music
+                                                                out/to size,
+                                                                another was
+                                                                placing music in
+                                                                the plastic
+                                                                covers, and the
+                                                                last group was
+                                                                placing
+                                                                the plastic in
+                                                                order and by
+                                                                book. It took
+                                                                many hours and
+                                                                was worth it.
+                                                                <br><br>
 
-<h2 id='vhs'>VHS Tapes</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/r-XvgmsBaug?si=_P9MVlxbslR1pbVj" title="YouTube video player" frameborder="0" allow="accelerometer; 
-autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<br><br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FmG8AKSAdbw?si=o3NmzNWqTvqUI4RP" title="YouTube video player" frameborder="0" allow="accelerometer; 
-autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<br><br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3HtcS4464BU?si=Ci_1P5LC-CzV1xOn" title="YouTube video player" frameborder="0" allow="accelerometer; 
-autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<br><br>
-The band had some VHS tapes lying around. Due to being the only one with a VCR player, the original tapes are with one of the former <a href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#chief'>CCWBs</a>. 
-<br><br>
+                                                                <h2 id='vhs'>VHS
+                                                                    Tapes</h2>
+                                                                <iframe
+                                                                    width="560"
+                                                                    height="315"
+                                                                    src="https://www.youtube.com/embed/r-XvgmsBaug?si=_P9MVlxbslR1pbVj"
+                                                                    title="YouTube video player"
+                                                                    frameborder="0"
+                                                                    allow="accelerometer; 
+autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                    referrerpolicy="strict-origin-when-cross-origin"
+                                                                    allowfullscreen></iframe>
+                                                                <br><br>
+                                                                <iframe
+                                                                    width="560"
+                                                                    height="315"
+                                                                    src="https://www.youtube.com/embed/FmG8AKSAdbw?si=o3NmzNWqTvqUI4RP"
+                                                                    title="YouTube video player"
+                                                                    frameborder="0"
+                                                                    allow="accelerometer; 
+autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                    referrerpolicy="strict-origin-when-cross-origin"
+                                                                    allowfullscreen></iframe>
+                                                                <br><br>
+                                                                <iframe
+                                                                    width="560"
+                                                                    height="315"
+                                                                    src="https://www.youtube.com/embed/3HtcS4464BU?si=Ci_1P5LC-CzV1xOn"
+                                                                    title="YouTube video player"
+                                                                    frameborder="0"
+                                                                    allow="accelerometer; 
+autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                    referrerpolicy="strict-origin-when-cross-origin"
+                                                                    allowfullscreen></iframe>
+                                                                <br><br>
+                                                                The band had
+                                                                some VHS tapes
+                                                                lying around.
+                                                                Due to being the
+                                                                only one with a
+                                                                VCR player, the
+                                                                original tapes
+                                                                are with one of
+                                                                the former <a
+                                                                    href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#chief'>CCWBs</a>.
+                                                                <br><br>
 
-<h2 id='tmu'>TMU Baseball</h2>
-An interaction between a member of the crowd and the band was as follows:<br>
-"Who are you guys?"<br>
-<br>
-"We're the band!"<br>
-<br>
-"So you like...Play music?"<br>
-<br>
-"Yep!"<br>
-<br>
-"...Why?"
-<br><br>
+                                                                <h2 id='tmu'>TMU
+                                                                    Baseball</h2>
+                                                                An interaction
+                                                                between a member
+                                                                of the crowd and
+                                                                the band was as
+                                                                follows:<br>
+                                                                "Who are you guys?"<br>
+                                                                <br>
+                                                                "We're the band!"<br>
+                                                                <br>
+                                                                "So you like...Play music?"<br>
+                                                                <br>
+                                                                "Yep!"<br>
+                                                                <br>
+                                                                "...Why?"
+                                                                <br><br>
 
-<h2 id='ob'>Olympic Basketball</h2>
-In 1984 we were the official band for the Men's Olympic Basketball. That is why the bass drum head has the Olympic logo.
-<br><br>
+                                                                <h2
+                                                                    id='ob'>Olympic
+                                                                    Basketball</h2>
+                                                                In 1984 we were
+                                                                the official
+                                                                band for the
+                                                                Men's Olympic
+                                                                Basketball. That
+                                                                is why the bass
+                                                                drum head has
+                                                                the Olympic
+                                                                logo.
+                                                                <br><br>
 
-<h2 id='h2023'>Halloween 2023</h2>
-The route for the Halloween Parade of 2023 involved going around the first-year residences of V1, MKV, and REV. Outside of REV, a group of students loved the performance
-so much they ran outside to hear us. Near another unidentified residence, someone yelled for the band to "shut the fuck up."
-<br><br>
-This is the same march where the song 3spooky5me was scrapped due to the fact that the band had to march comically slow to play it properly. 
-<br><br>
+                                                                <h2
+                                                                    id='h2023'>Halloween
+                                                                    2023</h2>
+                                                                The route for
+                                                                the Halloween
+                                                                Parade of 2023
+                                                                involved going
+                                                                around the
+                                                                first-year
+                                                                residences of
+                                                                V1, MKV, and
+                                                                REV. Outside of
+                                                                REV, a group of
+                                                                students loved
+                                                                the performance
+                                                                so much they ran
+                                                                outside to hear
+                                                                us. Near another
+                                                                unidentified
+                                                                residence,
+                                                                someone yelled
+                                                                for the band to
+                                                                "shut the fuck up."
+                                                                <br><br>
+                                                                This is the same
+                                                                march where the
+                                                                song 3spooky5me
+                                                                was scrapped due
+                                                                to the fact that
+                                                                the band had to
+                                                                march comically
+                                                                slow to play it
+                                                                properly.
+                                                                <br><br>
 
-<h2 id='f2024'>Fall 2024 Elections</h2>
-This was the first time in many years we had an election for <a href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#chief'>CCWB</a>.
-<br><br>
+                                                                <h2
+                                                                    id='f2024'>Fall
+                                                                    2024
+                                                                    Elections</h2>
+                                                                This was the
+                                                                first time in
+                                                                many years we
+                                                                had an election
+                                                                for <a
+                                                                    href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#chief'>CCWB</a>.
+                                                                <br><br>
 
-<h2 id='c2022'>Christmas Parade 2022</h2>
-In the 2022 Santa Claus parades, the Kitchener parade was so cold instruments, especially the saxophones and trumpets, froze.<br> 
-A similar situation happened at the 2024 Elmira Christmas parade with the trumpets, but it was sorted with weather-resistant valve grease. 
-<br><br>
+                                                                <h2
+                                                                    id='c2022'>Christmas
+                                                                    Parade
+                                                                    2022</h2>
+                                                                In the 2022
+                                                                Santa Claus
+                                                                parades, the
+                                                                Kitchener parade
+                                                                was so cold
+                                                                instruments,
+                                                                especially the
+                                                                saxophones and
+                                                                trumpets,
+                                                                froze.<br>
+                                                                A similar
+                                                                situation
+                                                                happened at the
+                                                                2024 Elmira
+                                                                Christmas parade
+                                                                with the
+                                                                trumpets, but it
+                                                                was sorted with
+                                                                weather-resistant
+                                                                valve grease.
+                                                                <br><br>
 
-<h2 id='ks2023'>2023 Kitchener Santa Claus Parade</h2>
-In the Kitchener Santa Claus parade of 2023, a purcussionist was playing the snare with such intensity his drumstick snapped in half. This occurred halfway through the 
-route. Despite this he successfully played until the end.
-<br><br>
+                                                                <h2
+                                                                    id='ks2023'>2023
+                                                                    Kitchener
+                                                                    Santa Claus
+                                                                    Parade</h2>
+                                                                In the Kitchener
+                                                                Santa Claus
+                                                                parade of 2023,
+                                                                a purcussionist
+                                                                was playing the
+                                                                snare with such
+                                                                intensity his
+                                                                drumstick
+                                                                snapped in half.
+                                                                This occurred
+                                                                halfway through
+                                                                the
+                                                                route. Despite
+                                                                this he
+                                                                successfully
+                                                                played until the
+                                                                end.
+                                                                <br><br>
 
-<h2 id='mfm'>Music from McGill</h2>
-In <a href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#year'>1229</a>, the <a href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#social'>social media manager</a> posted a video to the band's Instagram of the band playing Jeopardy. McGill loved the arrangement so much they wanted it,
-and to make the trade fair, they sent their whole music library to us in a Google Drive. This is where a good chunk of our showpieces such as "Sweet Caroline," come
-from.
-<br><br>
+                                                                <h2
+                                                                    id='mfm'>Music
+                                                                    from
+                                                                    McGill</h2>
+                                                                In <a
+                                                                    href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#year'>1229</a>,
+                                                                the <a
+                                                                    href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#social'>social
+                                                                    media
+                                                                    manager</a>
+                                                                posted a video
+                                                                to the band's
+                                                                Instagram of the
+                                                                band playing
+                                                                Jeopardy. McGill
+                                                                loved the
+                                                                arrangement so
+                                                                much they wanted
+                                                                it,
+                                                                and to make the
+                                                                trade fair, they
+                                                                sent their whole
+                                                                music library to
+                                                                us in a Google
+                                                                Drive. This is
+                                                                where a good
+                                                                chunk of our
+                                                                showpieces such
+                                                                as
+                                                                "Sweet Caroline,"
+                                                                come
+                                                                from.
+                                                                <br><br>
 
-<h2 id='dme'>Death March to Elora</h2>
-To pick a <a href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#year'>1165</a> End of Term Event, <a href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#nb'>Nick Boyko</a> sent out a poll. The options were a hike to Elora, camping at Columbia Lake and a slot for people to add to the poll. Someone added
-a consumer trip to space. All votes went to either the hike or the space trip. The space trip won by a considerable margin but was impossible, so a hike to Elora it was.
-<br><br>
-The next day, band members met up at Conestoga Mall to start the hike. The group walked mainly on the side of the roads. Nick Boyko and Gaetan Boue brought camping stools for
-people to take a break if needed. A couple of others brought recorders and a fife to bring music to the hike. 
-<br><br>
-After 7 hours and 30 km of walking, the group arrived at their destination. Spirits were low and bodies were tired, but a fire and some sleep took care of that. The group took 
-some photos, saw the Elora Gorge, and then took the 20 minute drive home. 
+                                                                <h2
+                                                                    id='dme'>Death
+                                                                    March to
+                                                                    Elora</h2>
+                                                                To pick a <a
+                                                                    href='https://warriorsband.uwaterloo.ca/wiki/main/index.html#year'>1165</a>
+                                                                End of Term
+                                                                Event, <a
+                                                                    href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#nb'>Nick
+                                                                    Boyko</a>
+                                                                sent out a poll.
+                                                                The options were
+                                                                a hike to Elora,
+                                                                camping at
+                                                                Columbia Lake
+                                                                and a slot for
+                                                                people to add to
+                                                                the poll.
+                                                                Someone added
+                                                                a consumer trip
+                                                                to space. All
+                                                                votes went to
+                                                                either the hike
+                                                                or the space
+                                                                trip. The space
+                                                                trip won by a
+                                                                considerable
+                                                                margin but was
+                                                                impossible, so a
+                                                                hike to Elora it
+                                                                was.
+                                                                <br><br>
+                                                                The next day,
+                                                                band members met
+                                                                up at Conestoga
+                                                                Mall to start
+                                                                the hike. The
+                                                                group walked
+                                                                mainly on the
+                                                                side of the
+                                                                roads. Nick
+                                                                Boyko and Gaetan
+                                                                Boue brought
+                                                                camping stools
+                                                                for
+                                                                people to take a
+                                                                break if needed.
+                                                                A couple of
+                                                                others brought
+                                                                recorders and a
+                                                                fife to bring
+                                                                music to the
+                                                                hike.
+                                                                <br><br>
+                                                                After 7 hours
+                                                                and 30 km of
+                                                                walking, the
+                                                                group arrived at
+                                                                their
+                                                                destination.
+                                                                Spirits were low
+                                                                and bodies were
+                                                                tired, but a
+                                                                fire and some
+                                                                sleep took care
+                                                                of that. The
+                                                                group took
+                                                                some photos, saw
+                                                                the Elora Gorge,
+                                                                and then took
+                                                                the 20 minute
+                                                                drive home.
 
-<h4>Image Gallery From the Event:</h4>
-<div class="image-gallery">
-    <style>
+                                                                <h4>Image
+                                                                    Gallery From
+                                                                    the
+                                                                    Event:</h4>
+                                                                <div
+                                                                    class="image-gallery">
+                                                                    <style>
         .image-gallery {
             display: flex;
             justify-content: center;
@@ -270,79 +699,246 @@ some photos, saw the Elora Gorge, and then took the 20 minute drive home.
             border-radius: 5px;
         }
     </style>
-    <img src="IMG_2558.webp" alt="The Poll">
-  <img src="IMG_2560.webp" alt="Fife">
-  <img src="IMG_2561.webp"alt="Chairs for breaks">
-  <img src="IMG_2563.webp"alt="Campfire">
-  <img src="IMG_2564.webp"alt="UW by Gorge">
-  <img src="IMG_2566.webp"alt="Before the Journey">
-</div>
-<br><br>
+                                                                    <img
+                                                                        src="IMG_2558.png"
+                                                                        alt="The Poll">
+                                                                    <img
+                                                                        src="IMG_2560.jpg"
+                                                                        alt="Fife">
+                                                                    <img
+                                                                        src="IMG_2561.jpg"
+                                                                        alt="Chairs for breaks">
+                                                                    <img
+                                                                        src="IMG_2563.jpg"
+                                                                        alt="Campfire">
+                                                                    <img
+                                                                        src="IMG_2564.jpg"
+                                                                        alt="UW by Gorge">
+                                                                    <img
+                                                                        src="IMG_2566.jpg"
+                                                                        alt="Before the Journey">
+                                                                </div>
+                                                                <br><br>
 
-<h2 id='r'>Reddit</h2>
-The Warriors Band subreddit can be found at <a href='https://www.reddit.com/r/warriorsband/'>r/warriorsband</a>, but there is also a satire
-subreddit, which can be found at <a href='https://www.reddit.com/r/warrirosbnad/'>r/warrirosbnad</a>.
-<br><br>
+                                                                <h2
+                                                                    id='r'>Reddit</h2>
+                                                                The Warriors
+                                                                Band subreddit
+                                                                can be found at
+                                                                <a
+                                                                    href='https://www.reddit.com/r/warriorsband/'>r/warriorsband</a>,
+                                                                but there is
+                                                                also a satire
+                                                                subreddit, which
+                                                                can be found at
+                                                                <a
+                                                                    href='https://www.reddit.com/r/warrirosbnad/'>r/warrirosbnad</a>.
+                                                                <br><br>
 
-<h2 id='wbce'>Warriors Band Client Ensembles</h2>
-Warriors Band has had 3 ensembles throughout its lifetime. The first being the drumline called "High Sticking", which was created in 2016 before going on hiatus. The Drumline was reborn in 2024, 
-but is yet to receive a name. It was also said to be the least successful of the 3 ensembles.<br>
+                                                                <h2
+                                                                    id='wbce'>Warriors
+                                                                    Band Client
+                                                                    Ensembles</h2>
+                                                                Warriors Band
+                                                                has had 3
+                                                                ensembles
+                                                                throughout its
+                                                                lifetime. The
+                                                                first being the
+                                                                drumline called
+                                                                "High Sticking",
+                                                                which was
+                                                                created in 2016
+                                                                before going on
+                                                                hiatus. The
+                                                                Drumline was
+                                                                reborn in 2024,
+                                                                but is yet to
+                                                                receive a name.
+                                                                It was also said
+                                                                to be the least
+                                                                successful of
+                                                                the 3
+                                                                ensembles.<br>
 
-Next is "WB:Heavy Metal", which was a group of 5-6 tuba players that played at Drumline Ontario and a few other events.<br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ff__1yq6C6Q?si=3rQkNOUTFwvudTWY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+                                                                Next is
+                                                                "WB:Heavy Metal",
+                                                                which was a
+                                                                group of 5-6
+                                                                tuba players
+                                                                that played at
+                                                                Drumline Ontario
+                                                                and a few other
+                                                                events.<br>
+                                                                <iframe
+                                                                    width="560"
+                                                                    height="315"
+                                                                    src="https://www.youtube.com/embed/ff__1yq6C6Q?si=3rQkNOUTFwvudTWY"
+                                                                    title="YouTube video player"
+                                                                    frameborder="0"
+                                                                    allow="accelerometer; autoplay; clipboard-write; 
+encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                    referrerpolicy="strict-origin-when-cross-origin"
+                                                                    allowfullscreen></iframe><br>
 
-Last is "WB: Squeaky Plastic", which was a recorder group that played at the Bomber in SLC every Tuesday for Open Mic. Which, accroding to <a href="https://warriorsband.uwaterloo.ca/wiki/govern/index.html#nb">Nick Boyko</a> is "proving that it was truly an open mic."<br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rBKXt2-EyrE?si=fDOKgI_95GuHe-h-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<br>
-Squeaky Clean had a few "signature" songs, with the most common being:
-<ul>
-<li>God Save the Tsar</li>
-<li>Hide and Seek by Imogen Heap</li>
-<li>Toxic by Britney Spears (allegedly)</li>
-</ul>
-<br><br>
+                                                                Last is
+                                                                "WB: Squeaky Plastic",
+                                                                which was a
+                                                                recorder group
+                                                                that played at
+                                                                the Bomber in
+                                                                SLC every
+                                                                Tuesday for Open
+                                                                Mic. Which,
+                                                                accroding to <a
+                                                                    href="https://warriorsband.uwaterloo.ca/wiki/govern/index.html#nb">Nick
+                                                                    Boyko</a> is
+                                                                "proving that it was truly an open mic."<br>
+                                                                <iframe
+                                                                    width="560"
+                                                                    height="315"
+                                                                    src="https://www.youtube.com/embed/rBKXt2-EyrE?si=fDOKgI_95GuHe-h-"
+                                                                    title="YouTube video player"
+                                                                    frameborder="0"
+                                                                    allow="accelerometer; autoplay; clipboard-write; 
+encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                    referrerpolicy="strict-origin-when-cross-origin"
+                                                                    allowfullscreen></iframe>
+                                                                <br>
+                                                                Squeaky Clean
+                                                                had a few
+                                                                "signature"
+                                                                songs, with the
+                                                                most common
+                                                                being:
+                                                                <ul>
+                                                                    <li>God Save
+                                                                        the
+                                                                        Tsar</li>
+                                                                    <li>Hide and
+                                                                        Seek by
+                                                                        Imogen
+                                                                        Heap</li>
+                                                                    <li>Toxic by
+                                                                        Britney
+                                                                        Spears
+                                                                        (allegedly)</li>
+                                                                </ul>
+                                                                <br><br>
 
-<h1 id='missing'>Missing Stories</h1>
-These are entries in the old wiki that were not archived. The contents are currently lost. Think of it as the band's lost media. 
-<h2 id='kick'>Kickoff</h2>
-No context is given for this besides that it was on <a href='https://warriorsband.uwaterloo.ca/wiki/cons/index.html#jwiki'>Johann's wiki</a>.
-<br><br>
+                                                                <h1
+                                                                    id='missing'>Missing
+                                                                    Stories</h1>
+                                                                These are
+                                                                entries in the
+                                                                old wiki that
+                                                                were not
+                                                                archived. The
+                                                                contents are
+                                                                currently lost.
+                                                                Think of it as
+                                                                the band's lost
+                                                                media.
+                                                                <h2
+                                                                    id='kick'>Kickoff</h2>
+                                                                No context is
+                                                                given for this
+                                                                besides that it
+                                                                was on <a
+                                                                    href='https://warriorsband.uwaterloo.ca/wiki/cons/index.html#jwiki'>Johann's
+                                                                    wiki</a>.
+                                                                <br><br>
 
-<h2 id='mme'>Matt's Massive Erection</h2>
-One of the missing entries from the old wiki on the Wayback Machine but it has a funny title. 
-<br><br>
+                                                                <h2
+                                                                    id='mme'>Matt's
+                                                                    Massive
+                                                                    Erection</h2>
+                                                                One of the
+                                                                missing entries
+                                                                from the old
+                                                                wiki on the
+                                                                Wayback Machine
+                                                                but it has a
+                                                                funny title.
+                                                                <br><br>
 
-<h2 id='pl'>Playboy Letter</h2>
-No context given for this entry.
-<br><br>
+                                                                <h2
+                                                                    id='pl'>Playboy
+                                                                    Letter</h2>
+                                                                No context given
+                                                                for this entry.
+                                                                <br><br>
 
-<h2 id='tionb'>The Impeachment of Nick Boyko</h2>
-<a href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#chief'>CCWB</a> <a href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#nb'>Nick</a> (the nth <a href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#chief'>CCWB</a>) got impeached. The story behind it is lost to time.
-<br><br>
+                                                                <h2
+                                                                    id='tionb'>The
+                                                                    Impeachment
+                                                                    of Nick
+                                                                    Boyko</h2>
+                                                                <a
+                                                                    href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#chief'>CCWB</a>
+                                                                <a
+                                                                    href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#nb'>Nick</a>
+                                                                (the nth <a
+                                                                    href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#chief'>CCWB</a>)
+                                                                got impeached.
+                                                                The story behind
+                                                                it is lost to
+                                                                time.
+                                                                <br><br>
 
-<h2 id='slc2013'>Trip to SLC 2013</h2>
-The band took a field trip to the SLC. Not much else is known.
-<br><br>
+                                                                <h2
+                                                                    id='slc2013'>Trip
+                                                                    to SLC
+                                                                    2013</h2>
+                                                                The band took a
+                                                                field trip to
+                                                                the SLC. Not
+                                                                much else is
+                                                                known.
+                                                                <br><br>
 
-<h2 id='ct'>Cassette Tapes</h2>
-<a href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#nb'>Nick Boyko</a> says there are cassette tapes of the band and that he will find them eventually.
-<br><br>
+                                                                <h2
+                                                                    id='ct'>Cassette
+                                                                    Tapes</h2>
+                                                                <a
+                                                                    href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html#nb'>Nick
+                                                                    Boyko</a>
+                                                                says there are
+                                                                cassette tapes
+                                                                of the band and
+                                                                that he will
+                                                                find them
+                                                                eventually.
+                                                                <br><br>
 
-<div class='footer' style='background-color:#ffd500; color:black'>
-	<div>
-	<a href='https://warriorsband.uwaterloo.ca/wiki/main/index.html'>Main Page</a>&emsp;
-	<a href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html'>Governance</a> &emsp;
-	<a href='https://warriorsband.uwaterloo.ca/wiki/cons/index.html'>Constitution/Administration</a> &emsp;
-	<a href='https://warriorsband.uwaterloo.ca/wiki/stories/index.html'>Stories</a>&emsp;
-	<a href='https://warriorsband.uwaterloo.ca/wiki/songs/index.htm'>Songs</a>&emsp;
-	<a href='https://warriorsband.uwaterloo.ca/wiki/all_page/index.html'>All Pages</a>&emsp;
-	</div>
-	<div>
-	Updated Winter 2025
-	</div>
-</div>
-</div>
-<script src='wiki.js'></script>
-</body>
+                                                                <div
+                                                                    class='footer'
+                                                                    style='background-color:#ffd500; color:black'>
+                                                                    <div>
+                                                                        <a
+                                                                            href='https://warriorsband.uwaterloo.ca/wiki/main/index.html'>Main
+                                                                            Page</a>&emsp;
+                                                                        <a
+                                                                            href='https://warriorsband.uwaterloo.ca/wiki/govern/index.html'>Governance</a>
+                                                                        &emsp;
+                                                                        <a
+                                                                            href='https://warriorsband.uwaterloo.ca/wiki/cons/index.html'>Constitution/Administration</a>
+                                                                        &emsp;
+                                                                        <a
+                                                                            href='https://warriorsband.uwaterloo.ca/wiki/stories/index.html'>Stories</a>&emsp;
+                                                                        <a
+                                                                            href='https://warriorsband.uwaterloo.ca/wiki/songs/index.htm'>Songs</a>&emsp;
+                                                                        <a
+                                                                            href='https://warriorsband.uwaterloo.ca/wiki/all_page/index.html'>All
+                                                                            Pages</a>&emsp;
+                                                                    </div>
+                                                                    <div>
+                                                                        Updated
+                                                                        Winter
+                                                                        2025
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <script
+                                                                src='wiki.js'></script>
+                                                        </body>
