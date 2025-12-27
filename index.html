@@ -1,233 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Home of the Waterloo Warriors Band</title>
-<link rel="icon" href="images/not_transparent.webp">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="website.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-<style>
+    <head>
+        <title>Home of the Waterloo Warriors Band</title>
+        <link rel="icon" href="images/ui/not_transparent.jpg">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="website.css">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 </style>
-</head>
-<body>
-<!--Info for technomancers: This is a template I found online and modified to our needs, W3 says it's cool for us to use so I moved forward -->
-<!--Because this is a template the CSS sheet is a bit of a mess. Most of the modifications were made in the very bottom, if no W3 in begining, I made that class-->
-<!--Otherise inspect element is you friend, good luck and happy editing! -->
+    </head>
+    <body>
+        <!--Info for technomancers: This is a template I found online and modified to our needs, W3 says it's cool for us to use so I moved forward -->
+        <!--Because this is a template the CSS sheet is a bit of a mess. Most of the modifications were made in the very bottom, if no W3 in begining, I made that class-->
+        <!--Otherise inspect element is you friend, good luck and happy editing! -->
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-	<a href="#gallery" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GALLERY</a>
-	<a href="https://warrior.uwaterloo.ca/Program/GetProgramDetails?courseId=ac316560-79cb-4b6f-8f5e-04c8033a2d9c" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MEMBERSHIP PURCHASE</a>
-	<a href="https://warriorsband.uwaterloo.ca/wiki/main/index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">WARRIORPEDIA</a>
-    </div>
-</div>
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-card">
+                <a
+                    class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+                    href="javascript:void(0)" onclick="myFunction()"
+                    title="Toggle Navigation Menu"><i
+                        class="fa fa-bars"></i></a>
+                <a href="#"
+                    class="w3-bar-item w3-button w3-padding-large">HOME</a>
+                <a href="#band"
+                    class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
+                <a href="#join"
+                    class="w3-bar-item w3-button w3-padding-large w3-hide-small">JOIN</a>
+                <a href="#faq"
+                    class="w3-bar-item w3-button w3-padding-large w3-hide-small">FAQ</a>
+                <a href="#gallery"
+                    class="w3-bar-item w3-button w3-padding-large w3-hide-small">GALLERY</a>
+                <a
+                    href="https://warrior.uwaterloo.ca/Program/GetProgramDetails?courseId=ac316560-79cb-4b6f-8f5e-04c8033a2d9c"
+                    class="w3-bar-item w3-button w3-padding-large w3-hide-small">MEMBERSHIP</a>
+                <a href="wiki/main/index.html"
+                    class="w3-bar-item w3-button w3-padding-large w3-hide-small">WARRIORPEDIA</a>
+                <a href="constitution.pdf" target="_blank"
+                    class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONSTITUTION</a>
+                <a href="#contact"
+                    class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+            </div>
+        </div>
 
-<!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#gallery" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GALLERY</a>
-  <a href="https://warrior.uwaterloo.ca/Program/GetProgramDetails?courseId=ac316560-79cb-4b6f-8f5e-04c8033a2d9c" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MEMBERSHIP PURCHASE</a>
-  <a href="https://warriorsband.uwaterloo.ca/wiki/main/index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">WARRIORPEDIA</a>
-</div>
+        <!-- Navbar on small screens -->
+        <div id="navDemo"
+            class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top"
+            style="margin-top:46px">
+            <a href="#band" class="w3-bar-item w3-button w3-padding-large"
+                onclick="myFunction()">BAND</a>
+            <a href="#join" class="w3-bar-item w3-button w3-padding-large"
+                onclick="myFunction()">JOIN</a>
+            <a href="#faq" class="w3-bar-item w3-button w3-padding-large"
+                onclick="myFunction()">FAQ</a>
+            <a href="#gallery" class="w3-bar-item w3-button w3-padding-large"
+                onclick="myFunction()">GALLERY</a>
+            <a
+                href="https://warrior.uwaterloo.ca/Program/GetProgramDetails?courseId=ac316560-79cb-4b6f-8f5e-04c8033a2d9c"
+                class="w3-bar-item w3-button w3-padding-large"
+                onclick="myFunction()">MEMBERSHIP PURCHASE</a>
+            <a href="wiki/main/index.html"
+                class="w3-bar-item w3-button w3-padding-large"
+                onclick="myFunction()">WARRIORPEDIA</a>
+            <a href="constitution.pdf" target="_blank"
+                class="w3-bar-item w3-button w3-padding-large"
+                onclick="myFunction()">CONSTITUTION</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-padding-large"
+                onclick="myFunction()">CONTACT</a>
+        </div>
 
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
+        <!-- Page content -->
+        <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-  <!-- Automatic Slideshow Images, Grayscale with Yellow Highlights. Shows up at the Begining of Webpage -->
-  <!--Add to it as you see fit, just copy and paste one of the <div><div> stuff </div></div> chunks. I have seperated them for you to see them easier-->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="images/sport_BnW.webp" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-yellow w3-padding-32 w3-hide-small">
-      <h3 class='slideshow_caption'>Catch us at:</h3>
-      <p class='slideshow_caption'><b>Sports Games!</b></p>   
-    </div>
-  </div>
-  
-  <div class="mySlides w3-display-container w3-center">
-    <img src="images/xmas_BnW.webp" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-yellow w3-padding-32 w3-hide-small">
-      <h3 class='slideshow_caption'>Catch us at:</h3>
-      <p class='slideshow_caption'><b>Christmas Parades in Kitchener and Elmira!</b></p>    
-    </div>
-  </div>
-  
-  <div class="mySlides w3-display-container w3-center">
-    <img src="images/parade_BnW.webp" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-yellow w3-padding-32 w3-hide-small">
-      <h3 class='slideshow_caption'>Catch us at:</h3>
-      <p class='slideshow_caption'><b>Parades around campus!</b></p>    
-    </div>
-  </div>
-  
-	<div class="mySlides w3-display-container w3-center">
-  <img src="images/Concert_BnW.webp" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-yellow w3-padding-32 w3-hide-small">
-      <h3 class='slideshow_caption'>Catch us at:</h3>
-      <p class='slideshow_caption'><b>Concert band's end of term concert!</b></p>    
-    </div>
-  </div>
+            <!-- Automatic Slideshow Images, Grayscale with Yellow Highlights. Shows up at the Begining of Webpage -->
+            <!--Add to it as you see fit, just copy and paste one of the <div><div> stuff </div></div> chunks. I have seperated them for you to see them easier-->
+            <div class="mySlides w3-display-container w3-center">
+                <img src="images/hero/sport_BnW.jpg" style="width:100%">
+                <div
+                    class="w3-display-bottommiddle w3-container w3-text-yellow w3-padding-32 w3-hide-small">
+                    <h3 class='slideshow_caption'>Catch us at...</h3>
+                    <p class='slideshow_caption'><b>Sports Games!</b></p>
+                </div>
+            </div>
 
-  <!-- The Main Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">WARRIORS BAND</h2>
-    <p class="w3-opacity"><i>Loud is good, fast is better, loud and fast is best!</i></p>
-    <p>
-	We are the official pep band for University of Waterloo! Our job is to attend sports games and hype up the crowd with our music. Even though the band was created for 
-	attending sports games we attend other events on campus and around the city! <br><br>
-	<h3 class='w3-wide'>REQUIREMENTS</h3>
-	Pay the membership fee of $10 and attend 2 rehersals per term. The membership fee covers both the main band and drumline. No instrument or experience is required!
-	</p>
-  </div>
+            <div class="mySlides w3-display-container w3-center">
+                <img src="images/hero/xmas_BnW.jpg" style="width:100%">
+                <div
+                    class="w3-display-bottommiddle w3-container w3-text-yellow w3-padding-32 w3-hide-small">
+                    <h3 class='slideshow_caption'>Catch us at...</h3>
+                    <p class='slideshow_caption'><b>Christmas Parades!</b></p>
+                </div>
+            </div>
 
-  <!-- The Drumline Section -->
-  <div class="w3-black" id="tour">
-    <div class="w3-container w3-content w3-padding-64 w3-center" style="max-width:800px">
-      <h2 class="w3-wide w3-center">DRUMLINE</h2>
-      <p> 
-	  Taking inspiration from organizations such as DCI and WGI the Warriors Band Drumline plays battery percussion pieces at sporting events and other events around 
-	  campus and the city. The Warriors Band Drumline is open to people of all experience whether you have played percussion for years or have never touched a drum,  
-	  come join us at one of our two rehearsals every week to play some drums! 
+            <div class="mySlides w3-display-container w3-center">
+                <img src="images/hero/parade_BnW.jpg" style="width:100%">
+                <div
+                    class="w3-display-bottommiddle w3-container w3-text-yellow w3-padding-32 w3-hide-small">
+                    <h3 class='slideshow_caption'>Catch us at:</h3>
+                    <p class='slideshow_caption'><b>Parades around
+                            campus!</b></p>
+                </div>
+            </div>
 
-	  <h3 class='w3-wide '>REQUIREMENTS</h3>
-		Pay the membership fee of $10 and print off your music. The membership fee covers both the main band and drumline. No instrument is required
-		but bringing your own sticks is encouraged. 
-	  </p>
-	  
-    </div>
-  </div>
+            <div class="mySlides w3-display-container w3-center">
+                <img src="images/hero/Concert_BnW.jpg" style="width:100%">
+                <div
+                    class="w3-display-bottommiddle w3-container w3-text-yellow w3-padding-32 w3-hide-small">
+                    <h3 class='slideshow_caption'>Catch us at:</h3>
+                    <p class='slideshow_caption'><b>Concert band's end of term
+                            concert!</b></p>
+                </div>
+            </div>
 
-  <!-- The Contact Section -->
-  <!-- Add to this as you see fit, this is where band photos should go-->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Interested? Come join us!</i></p>
-	<!--Update this section every term-->
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> PAC 1001 for both Full Band and Drumline<br>
-        Full band:<br>
-        <i class="fa fa-clock" style="width:30px"></i>Thursdays 5-6pm<br>
-        Drumline:<br>
-        <i class="fa fa-clock" style="width:30px"></i>Wednesdays 6:30-8pm<br>
-        <i class="fa fa-clock" style="width:30px"></i>Sundays 12-3pm 
-        <br><br>
-      </div>
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-            <a href="https://www.instagram.com/wlooband/"><i class="fa-brands fa-instagram-square" style="width:30px"></i> @wlooband</a><br>
-            <a href='https://discord.gg/Uynh5BpjZq'><i class="fa-brands fa-discord" style="width:30px"></i> Join the Discord server!</a><br>
-            <a href='https://www.youtube.com/@WaterlooWarriorsBand'><i class="fa-brands fa-youtube" style="width:30px"></i> Check out some videos!</a><br>
-            <a href='mailto:warriorsband@gmail.com'><i class="fa fa-envelope" style="width:30px"></i> Email: warriorsband@gmail.com</a><br>
-            <a href='https://www.reddit.com/r/warriorsband/'><i class= "fa-brands fa-reddit" style="width:30px"></i> Check out our Subreddit</a><br>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Image Gallery Section -->
- <div class="w3-black" id="gallery">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-		<h2 class="w3-wide w3-center">GALLERY</h2>
-		<div class="gallery-container">
-      <div class="gallery-item">
-      <a target="_blank" href="images/014.webp">
-      <img src="images/014.webp" alt="Band Posing in PAC, unknown">
-			</a>
-			<div class="desc">Band posing in PAC, Unknown</div>
-			</div>
-			
-			<div class="gallery-item">
-      <a target="_blank" href="images/DSCF1027.webp">
-      <img src="images/DSCF1027.webp" alt="Cinque Terre" width="600" height="400">
-			</a>
-			<div class="desc">Band at a Canada Day Parade, 2012</div>
-			</div>
-			
-			<div class="gallery-item">
-      <a target="_blank" href="images/IMG_20231119_123611_686.webp">
-      <img src="images/IMG_20231119_123611_686.webp" alt="Cinque Terre" width="600" height="400">
-			</a>
-			<div class="desc">Band at Santa Claus Parade, 2023</div>
-			</div>
-			
-			<div class="gallery-item">
-      <a target="_blank" href="images/IMG_20231112_101035_947.webp">
-      <img src="images/IMG_20231112_101035_947.webp" alt="Cinque Terre" width="600" height="400">
-			</a>
-			<div class="desc">Band at a Basketball Game, 2023</div>
-			</div>
-			
-			<div class="gallery-item">
-      <a target="_blank" href="images/IMG_20240121_113801_027.webp">
-      <img src="images/IMG_20240121_113801_027.webp" alt="Cinque Terre" width="600" height="400">
-			</a>
-			<div class="desc">Band at a Hockey Game, 2024</div>
-			</div>
-			
-			<div class="gallery-item">
-      <a target="_blank" href="images/math_opening_1_1968.webp">
-      <img src="images/math_opening_1_1968.webp" alt="Cinque Terre" width="600" height="400">
-			</a>
-			<div class="desc">Band at the opening of the MC building, 1968</div>
-			</div>
-			
-			<div class="gallery-item">
-      <a target="_blank" href="images/pool_poster_w1982.webp">
-      <img src="images/pool_poster_w1982.webp" alt="Cinque Terre" width="600" height="400">
-			</a>
-			<div class="desc">Band playing in a pool, 1982</div>
-			</div>
-			
-			<div class="gallery-item">
-      <a target="_blank" href="images/the_first_five_jan1967.webp">
-      <img src="images/the_first_five_jan1967.webp" alt="Cinque Terre" width="600" height="400">
-			</a>
-			<div class="desc">The first five members, 1967</div>
-			</div>
-			
-			<div class="gallery-item">
-      <a target="_blank" href="images/toe_track_f1984.webp">
-      <img src="images/toe_track_f1984.webp" alt="Cinque Terre" width="600" height="400">
-			</a>
-			<div class="desc">Band at Track and Field, 1984</div>
-			</div>
-			
-			<div class="gallery-item">
-      <a target="_blank" href="images/wb005.webp">
-      <img src="images/wb005.webp" alt="Cinque Terre" width="600" height="400">
-			</a>
-			<div class="desc">Band posing with the bass drum, Unknown</div>
-			</div>
-		</div>
-    </div>
-  </div>
-<!-- End Page Content -->
-</div>
+            <!-- The Main Band Section -->
+            <div class="w3-black" id="band">
+                <div class="w3-container w3-content w3-center w3-padding-64"
+                    style="max-width:800px">
+                    <h2 class="w3-wide">WARRIORS BAND</h2>
+                    <p class="w3-text-white"><i>Loud is good, fast is better, loud and
+                            fast is best!</i></p>
+                    <p class="w3-text-yellow">
+                        We are the official pep band for University of Waterloo! Our
+                        job is to attend sports games and hype up the crowd with our
+                        music. Even though the band was created for
+                        attending sports games we attend other events on campus and
+                        around the city! <br><br>
+                        <h3 class='w3-wide'>REQUIREMENTS</h3>
+                        Pay the membership fee of $10 and attend 2 rehersals per
+                        term. The membership fee covers both the main band and
+                        drumline. No instrument or experience is required!
+                    </p>
+                </div>
+            </div>
 
-<!-- Image of Bass Drum to close the page nicely -->
-<img src="images/PA280009.webp" class="w3-image w3-greyscale-min" style="width:100%">
+            <!-- The Drumline Section -->
+            <div class="w3-container w3-content w3-padding-64 w3-center"
+                style="max-width:800px" id="tour">
+                <h2 class="w3-wide w3-center">DRUMLINE</h2>
+                <p>
+                    Taking inspiration from organizations such as DCI and
+                    WGI the Warriors Band Drumline plays battery percussion
+                    pieces at sporting events and other events around
+                    campus and the city. The Warriors Band Drumline is open
+                    to people of all experience whether you have played
+                    percussion for years or have never touched a drum,
+                    come join us at one of our two rehearsals every week to
+                    play some drums!
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+                    <h3 class='w3-wide '>REQUIREMENTS</h3>
+                    Pay the membership fee of $10 and print off your music.
+                    The membership fee covers both the main band and
+                    drumline. We provide all drums and equipment,
+                    but bringing your own sticks is encouraged.
+                </p>
 
-  <a href="https://www.instagram.com/wlooband/"><i class="fa-brands fa-instagram-square w3-hover-opacity"></i></a>
-  <a href='https://discord.gg/Uynh5BpjZq'><i class="fa-brands fa-discord w3-hover-opacity"></i></a>
-  <a href='https://www.youtube.com/@WaterlooWarriorsBand'><i class="fa-brands fa-youtube w3-hover-opacity"></i></a>
-  <a href='https://www.reddit.com/r/warriorsband/'><i class="fa-brands fa-reddit w3-hover-opacity"></i></a>
-  
-  <!--<p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>-->
-  <br>Updated Fall 2025
-</footer>
+            </div>
 
-<script>
+            <!-- The Join Section -->
+            <!-- Add to this as you see fit, this is where band photos should go-->
+            <div class="w3-black" id="join">
+                <div class="w3-container w3-content w3-padding-64"
+                    style="max-width:800px">
+                    <h2 class="w3-wide w3-center">JOIN WARRIORS BAND!</h2>
+                    <p class="w3-center w3-text-white"><i>Interested? Join Warriors Band! New members are
+                            welcome at any
+                            practice, no audition required!</i></p>
+                    <!--Update this section every term-->
+                    <div class="w3-row w3-padding-16 w3-text-yellow">
+                        <div class="w3-col m12 w3-large w3-center">
+                            <i class="fa fa-map-marker" style="width:30px"></i>PAC 1001<br>
+                            <a href="images/info/pac1001.png" target="_blank" style="font-size:14px;"><i
+                                    class="fa fa-map"
+                                    style="width:20px"></i>Lost? Here's a map</a><br>
+                        </div>
+                        <div class="w3-col m6 w3-large w3-padding-16 w3-center">
+                            <strong>Full Band</strong><br>
+                            <i class="fa fa-clock" style="width:30px"></i>Thursdays 5-6pm<br>
+                        </div>
+                        <div class="w3-col m6 w3-large w3-padding-16 w3-center">
+                            <strong>Drumline</strong><br>
+                            <i class="fa fa-clock" style="width:30px"></i>Wednesdays 6:30-8pm<br>
+                            <i class="fa fa-clock" style="width:30px"></i>Sundays 12-3pm
+                        </div>
+                        <div class="w3-col m12 w3-margin-top w3-center">
+                            <p class="w3-center w3-text-white"><i> Join the Discord server or the mailing list to stay
+                                    tuned to
+                                    practice announcements.</i></p>
+                            <a href='https://discord.gg/Uynh5BpjZq' class="w3-large"><i
+                                    class="fa-brands fa-discord"
+                                    style="width:30px"></i> Join the Discord
+                                server!</a><br>
+                            <a href='https://forms.gle/oZPM54Z83CFfjJJ49' class="w3-large"><i
+                                    class="fa fa-envelope" style="width:30px"></i>
+                                Join the mailing list!</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="w3-container w3-content w3-padding-64"
+                style="max-width:800px" id="faq">
+                <h2 class="w3-wide w3-center">FREQUENTLY ASKED QUESTIONS</h2>
+                <div class="w3-row w3-padding-32">
+                    <div class="w3-col">
+                        <p><strong>How do I become a full member?</strong></p>
+                        <p>Simply pay a 10$ termly membership fee, and attend at least 2 practices! 100% of membership
+                            fees go towards our instruments, equipment, and other band benefits</p>
+
+                        <p><strong>Do I have to come to practice?</strong></p>
+                        <p>No! We recognise that you're busy, so attendance is always optional, though strongly
+                            encouraged. You're also welcome to come late or leave early.</p>
+
+                        <p><strong>Do I have to come to events?</strong></p>
+                        <p>No! People often come to just part of sports games, so you can come for just one or two
+                            periods and then go work on the work term report that you haven't started and is due at
+                            midnight tonight.</p>
+
+                        <p><strong>Do I have to audition?</strong></p>
+                        <p>No! We have never held auditions, and likely never will.</p>
+
+                        <p><strong>Do I have to practice the music at home?</strong></p>
+                        <p>No. In fact, practising at home is discouraged for fear that one day we might take ourselves
+                            seriously.</p>
+
+                        <p><strong>Where else do you perform?</strong></p>
+                        <p>We usually go to sports games on weekends during the varsity season. During fall terms, we
+                            typically march in 2-3 Santa Claus parades. We also invent our own events such as the
+                            Halloween march around campus!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Gallery Section -->
+            <div class="w3-black" id="gallery">
+                <div class="w3-container w3-content w3-padding-64"
+                    style="max-width:800px">
+                    <h2 class="w3-wide w3-center">GALLERY</h2>
+                    <div class="w3-center w3-padding-24">
+                        <a
+                            href="https://www.youtube.com/@waterloofriendshipsquad"
+                            target="_blank"
+                            class="w3-button w3-padding-large w3-large w3-margin-right w3-margin-bottom"><i
+                                class="fab fa-youtube"></i> More videos!</a>
+                        <a href="https://www.instagram.com/wlooband/"
+                            target="_blank"
+                            class="w3-button w3-padding-large w3-large w3-margin-right w3-margin-bottom"><i
+                                class="fab fa-instagram"></i> More photos!</a>
+                        <a href="https://www.reddit.com/r/waterloo/"
+                            target="_blank"
+                            class="w3-button w3-padding-large w3-large w3-margin-bottom"><i
+                                class="fab fa-reddit"></i> More posts!</a>
+                    </div>
+                    <div class="gallery-container">
+
+                        <div class="gallery-item">
+                            <a target="_blank"
+                                href="images/gallery/htn2025.png">
+                                <img src="images/gallery/htn2025.png"
+                                    alt="Band at Hack The North, 2025"
+                                    width="600" height="400">
+                            </a>
+                            <div class="desc">Band at Hack The North, 2025</div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a target="_blank" href="images/gallery/014.JPG">
+                                <img src="images/gallery/014.JPG"
+                                    alt="Band Posing in PAC, unknown">
+                            </a>
+                            <div class="desc">Band posing in PAC, Unknown</div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a target="_blank"
+                                href="images/gallery/DSCF1027.JPG">
+                                <img src="images/gallery/DSCF1027.JPG"
+                                    alt="Cinque Terre" width="600" height="400">
+                            </a>
+                            <div class="desc">Band at a Canada Day Parade,
+                                2012</div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a target="_blank"
+                                href="images/gallery/IMG_20231119_123611_686.jpg">
+                                <img
+                                    src="images/gallery/IMG_20231119_123611_686.jpg"
+                                    alt="Cinque Terre" width="600" height="400">
+                            </a>
+                            <div class="desc">Band at Santa Claus Parade,
+                                2023</div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a target="_blank"
+                                href="images/gallery/IMG_20231112_101035_947.jpg">
+                                <img
+                                    src="images/gallery/IMG_20231112_101035_947.jpg"
+                                    alt="Cinque Terre" width="600" height="400">
+                            </a>
+                            <div class="desc">Band at a Basketball Game,
+                                2023</div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a target="_blank"
+                                href="images/gallery/IMG_20240121_113801_027.jpg">
+                                <img
+                                    src="images/gallery/IMG_20240121_113801_027.jpg"
+                                    alt="Cinque Terre" width="600" height="400">
+                            </a>
+                            <div class="desc">Band at a Hockey Game, 2024</div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a target="_blank"
+                                href="images/gallery/math_opening_1_1968.jpg">
+                                <img
+                                    src="images/gallery/math_opening_1_1968.jpg"
+                                    alt="Cinque Terre" width="600" height="400">
+                            </a>
+                            <div class="desc">Band at the opening of the MC
+                                building, 1968</div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a target="_blank"
+                                href="images/gallery/pool_poster_w1982.jpg">
+                                <img src="images/gallery/pool_poster_w1982.jpg"
+                                    alt="Cinque Terre" width="600" height="400">
+                            </a>
+                            <div class="desc">Band playing in a pool, 1982</div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a target="_blank"
+                                href="images/gallery/the_first_five_jan1967.jpg">
+                                <img
+                                    src="images/gallery/the_first_five_jan1967.jpg"
+                                    alt="Cinque Terre" width="600" height="400">
+                            </a>
+                            <div class="desc">The first five members, 1967</div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a target="_blank"
+                                href="images/gallery/toe_track_f1984.jpg">
+                                <img src="images/gallery/toe_track_f1984.jpg"
+                                    alt="Cinque Terre" width="600" height="400">
+                            </a>
+                            <div class="desc">Band at Track and Field,
+                                1984</div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a target="_blank" href="images/gallery/wb005.jpg">
+                                <img src="images/gallery/wb005.jpg"
+                                    alt="Cinque Terre" width="600" height="400">
+                            </a>
+                            <div class="desc">Band posing with the bass drum,
+                                Unknown</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Page Content -->
+        </div>
+
+        <!-- Image of Bass Drum to close the page nicely -->
+        <img src="images/gallery/PA280009.JPG" class="w3-image w3-greyscale-min"
+            style="width:100%">
+
+        <!-- Contact Section -->
+        <div class="w3-container w3-content w3-padding-64 w3-light-grey"
+            style="max-width:800px" id="contact">
+            <h2 class="w3-wide w3-center">CONTACT</h2>
+            <div class="w3-center">
+                <p><strong>Email:</strong> <span class="w3-text-grey">warriorsband@gmail.com</span></p>
+                <p><strong>Instagram:</strong> <a href="https://www.instagram.com/wlooband/"
+                        target="_blank">@wlooband</a></p>
+                <p><strong>Discord:</strong> <a
+                        href="https://discord.gg/Uynh5BpjZq">https://discord.gg/Uynh5BpjZq</a></p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer
+            class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+
+            <a href="https://www.instagram.com/wlooband/"><i
+                    class="fa-brands fa-instagram-square w3-hover-opacity"></i></a>
+            <a href='https://discord.gg/Uynh5BpjZq'><i
+                    class="fa-brands fa-discord w3-hover-opacity"></i></a>
+            <a href='https://www.youtube.com/@WaterlooWarriorsBand'><i
+                    class="fa-brands fa-youtube w3-hover-opacity"></i></a>
+            <a href='https://www.reddit.com/r/warriorsband/'><i
+                    class="fa-brands fa-reddit w3-hover-opacity"></i></a>
+
+            <!--<p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>-->
+            <br>Updated Fall 2025
+        </footer>
+
+        <script>
 // Automatic Slideshow - change image every 6 seconds
 var myIndex = 0;
 carousel();
@@ -263,5 +445,5 @@ window.onclick = function(event) {
 }
 </script>
 
-</body>
+    </body>
 </html>
