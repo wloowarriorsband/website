@@ -16,9 +16,13 @@ export OUT
 find "$SRC" -type f | \
 parallel --delay 0.5 '
 img="{}"
+rel_path="${img#'"$SRC"'/}"
+rel_dir="$(dirname "$rel_path")"
 base=$(basename "$img")
 name="${base%.*}"
-out="$OUT/$name.webp"
+out="$OUT/$rel_dir/$name.webp"
+
+mkdir -p "$(dirname "$out")"
 
 ffmpeg -threads 1 -loglevel error -y \
     -i "$img" \
