@@ -4,26 +4,28 @@
     box-sizing: border-box; /* Ensures padding/borders don't affect element size */
 }
 
-html, body {
+html,
+body {
     width: 100%;
     overflow-x: hidden; /* Prevents horizontal scrollbars */
 }
-body, p {
-	margin: 0;
-	padding: 0;	
-	padding-bottom:30px;
+body,
+p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
 }
-h1{
-	margin: 0;
+h1 {
+    margin: 0;
 }
-.article a{
-	color: #ffd500;
-	text-decoration: none;
+.article a {
+    color: #ffd500;
+    text-decoration: none;
 }
 .sidetable {
-  border: 1px solid black;
-  border-collapse: collapse;
-  width: 200px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 200px;
 }
 header {
     display: flex;
@@ -31,7 +33,7 @@ header {
     align-items: center; /* Vertically centers all header content */
     padding: 10px;
     box-sizing: border-box;
-    background-color: #f7f7f7;     /* Background color */
+    background-color: #f7f7f7; /* Background color */
     border-bottom: 2px solid #ffd500;
 }
 
@@ -155,104 +157,103 @@ header {
     }
 }
 
-.main-content{
-	display:flex;
-}	
-.left-sidebar{
-	flex:1;
-	padding:30px;
-	font-size:15px;
-	color:#ffd500;
+.main-content {
+    display: flex;
 }
-.accordian{
-	display:flex;
-	flex-direction:column;
-	width:137px;
-	text-shadow:
-    0px 0px 2px black,
-    0px 0px 2px black,
-    0px 0px 2px black,
-    0px 0px 2px black;
+.left-sidebar {
+    flex: 1;
+    padding: 30px;
+    font-size: 15px;
+    color: #ffd500;
 }
-.accordian-item-summary{
-	padding:0;
-	cursor: pointer;
+.accordian {
+    display: flex;
+    flex-direction: column;
+    width: 137px;
+    text-shadow:
+        0px 0px 2px black,
+        0px 0px 2px black,
+        0px 0px 2px black,
+        0px 0px 2px black;
 }
-.accordian-item-content{
-	padding:0px;
+.accordian-item-summary {
+    padding: 0;
+    cursor: pointer;
 }
-.right-content{
-	flex 4;
-	padding-left:20px;
-	padding-right:20px;
+.accordian-item-content {
+    padding: 0px;
 }
-.article{
-	max-width:900px;
-	display:flex;
-	flex-direction:row;
-	justify-content: space-between;
+.right-content {
+    flex: 4;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-.article-content{
-	flex:3;
-	padding-right:16px;
+.article {
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-.article-image{
-	flex:1;
-	text-align:center;
+.article-content {
+    flex: 3;
+    padding-right: 16px;
 }
-.fact-sheet{
-	background-color:#f9f9f9;
-	padding:20px;
-	border:1px solid #ddd
-}	
-.fact-sheet	h3{
-	font-size:18px;
-	margin-bottom:10px;
-	background-color:black;
-	color:white;
-	padding:5px 10px;
+.article-image {
+    flex: 1;
+    text-align: center;
 }
-.fact-sheet ul{
-	list-style-type: disc;
-	padding-left:20px;
+.fact-sheet {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
 }
-.right-content h1{
-	max-width:900px;
-	font-size:36px;
-	border-bottom:1px solid black;
-	margin-bottom:10px;
-}	
-.right-content h2{
-	font-size:24px;
-	border-bottom:1px solid black;
-	margin-bottom:10px;
-}	
-.right-content p{
-	font-size:16px;
-	line-height:1.5;
+.fact-sheet h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
 }
-.right-content img{
-	max-width:200px;
-	height:auto;
-	
+.fact-sheet ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }
-.footer{
-	background-color:#ffd500;
-	text-align:center;
-	padding: 10px;
+.right-content h1 {
+    max-width: 900px;
+    font-size: 36px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
 }
-.regtable{
-	border: 1px solid black;
-	border-collapse: collapse;
+.right-content h2 {
+    font-size: 24px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
 }
-.barlink{
-color:yellow;
-text-decoration: none;
-text-shadow:
-    0px 0px 2px black,
-    0px 0px 2px black,
-    0px 0px 2px black,
-    0px 0px 2px black;	
+.right-content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.right-content img {
+    max-width: 200px;
+    height: auto;
+}
+.footer {
+    background-color: #ffd500;
+    text-align: center;
+    padding: 10px;
+}
+.regtable {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.barlink {
+    color: yellow;
+    text-decoration: none;
+    text-shadow:
+        0px 0px 2px black,
+        0px 0px 2px black,
+        0px 0px 2px black,
+        0px 0px 2px black;
 }
 .result-item {
     padding: 10px;
@@ -269,11 +270,11 @@ text-shadow:
     margin-top: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-	list-style-type: none;
+    list-style-type: none;
 }
 #pdf-viewer {
     width: 100%;
-    max-width: 600px;  /* Set max-width to avoid too large PDF on big screens */
+    max-width: 600px; /* Set max-width to avoid too large PDF on big screens */
     margin: auto;
 }
 
@@ -283,66 +284,66 @@ text-shadow:
     }
 }
 img {
-  float: right; /* This will push the image to the right side of the content */
-  margin-left: 15px; /* Adds space between the image and the text */
-  margin-bottom: 15px; /* Adds space below the image */
-  max-width: 100%; /* Ensures images are responsive */
+    float: right; /* This will push the image to the right side of the content */
+    margin-left: 15px; /* Adds space between the image and the text */
+    margin-bottom: 15px; /* Adds space below the image */
+    max-width: 100%; /* Ensures images are responsive */
 }
 .content {
-  display: flex;
-  align-items: flex-start;  /* Aligns the image and text at the top */
-  flex-wrap: wrap;  /* Allows content to wrap if the screen is small */
+    display: flex;
+    align-items: flex-start; /* Aligns the image and text at the top */
+    flex-wrap: wrap; /* Allows content to wrap if the screen is small */
 }
 
 .image-container {
-  flex: 0 0 auto;  /* Keeps the image size fixed */
-  margin-left: 15px;  /* Adds space between image and text */
+    flex: 0 0 auto; /* Keeps the image size fixed */
+    margin-left: 15px; /* Adds space between image and text */
 }
 
 .image-container img {
-  width: 200px;  /* Adjust the size of the image */
-  height: auto;   /* Maintain the image's aspect ratio */
+    width: 200px; /* Adjust the size of the image */
+    height: auto; /* Maintain the image's aspect ratio */
 }
 
 .text {
-  flex: 1;  /* The text section will take the remaining space */
-  line-height: 1.6;  /* Optional: improves text readability */
+    flex: 1; /* The text section will take the remaining space */
+    line-height: 1.6; /* Optional: improves text readability */
 }
 
 @media (max-width: 600px) {
-  .content {
-    flex-direction: column; /* Stack the image and text vertically on small screens */
-  }
+    .content {
+        flex-direction: column; /* Stack the image and text vertically on small screens */
+    }
 
-  .image-container {
-    margin: 0 auto; /* Center the image */
-    margin-bottom: 15px; /* Add space below the image */
-  }
-  .scroll-container{
-	  margin-bottom: 15px;
-  }
+    .image-container {
+        margin: 0 auto; /* Center the image */
+        margin-bottom: 15px; /* Add space below the image */
+    }
+    .scroll-container {
+        margin-bottom: 15px;
+    }
 }
 div.scroll-container {
-  background-color: #333;
-  overflow: auto;
-  white-space: nowrap;
-  padding: 10px;
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
 }
 
 div.scroll-container img {
-  padding: 10px;
+    padding: 10px;
 }
 
 .video-container {
-        float: right; /* Align the container to the right */
-        margin-left: 20px; /* Add some space between the video and the text */
-        max-width: 50%; /* Optional: limit the video container's width */
+    float: right; /* Align the container to the right */
+    margin-left: 20px; /* Add some space between the video and the text */
+    max-width: 50%; /* Optional: limit the video container's width */
 }
 
-    /* Optional: to ensure text wraps around nicely */
-    body {
-        line-height: 1.6; /* Adjust line spacing */
-    }
+/* Optional: to ensure text wraps around nicely */
+body {
+    line-height: 1.6; /* Adjust line spacing */
+}
 @media (max-width: 768px) {
     .video-container {
         float: none; /* Remove float */
@@ -350,90 +351,99 @@ div.scroll-container img {
         display: block;
     }
 }
-* {box-sizing:border-box}
+* {
+    box-sizing: border-box;
+}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+    display: none;
 }
 
 /* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.active,
+.dot:hover {
+    background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
 }

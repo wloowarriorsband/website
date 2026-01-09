@@ -1,0 +1,24 @@
+{
+    "name": "warriorsbandwebsite",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "format": "prettier --write ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/celery6/warriorsbandwebsite.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/celery6/warriorsbandwebsite/issues"
+    },
+    "homepage": "https://github.com/celery6/warriorsbandwebsite#readme",
+    "devDependencies": {
+        "prettier": "^3.7.4"
+    }
+}

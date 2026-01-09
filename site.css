@@ -1,101 +1,104 @@
-html, body {
-    margin:0;
-    padding:0;
-	font-family: 'Trebucht MS' ;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebucht MS";
 }
-icon{
-	href='Youtube_logo_i.webp';
+p {
+    font-family:
+        Gill Sans,
+        sans-serif;
 }
-p{
-	font-family: Gill Sans, sans-serif;
+h2 {
+    font-family:
+        Gill Sans,
+        sans-serif;
+    font-weight: bolder;
 }
-h2{
-	font-family: Gill Sans, sans-serif;
-	font-weight: bolder;
-}
-h3{
-	font-family: Tahoma, sans-serif;
+h3 {
+    font-family: Tahoma, sans-serif;
 }
 .header {
     background-color: #ffd54f;
-    text-align:left;
+    text-align: left;
 }
 .content {
-    margin-bottom:auto;
-    text-align:center;
-	font-family: 'sans-serif' ;
-	
+    margin-bottom: auto;
+    text-align: center;
+    font-family: "sans-serif";
 }
 .long-form {
-    margin-bottom:auto;
-    text-align:left;
+    margin-bottom: auto;
+    text-align: left;
 }
 .spacer {
     background-color: #616161;
 }
 .mash-header {
-    clear:both
+    clear: both;
 }
 table {
     border-collapse: collapse;
 }
-th,td {
+th,
+td {
     padding: 15px;
 }
-a:hover{color:black}
-.logo{
-	    height: 50px;
-		width: 50px;
+a:hover {
+    color: black;
 }
-.Banner_logo{
-	height:100px;
-	width:100px;
+.logo {
+    height: 50px;
+    width: 50px;
 }
-.Banner_logo_wide{
-	height:50px;
-	width:115px;
+.Banner_logo {
+    height: 100px;
+    width: 100px;
 }
-.images{
-	height:350px
+.Banner_logo_wide {
+    height: 50px;
+    width: 115px;
+}
+.images {
+    height: 350px;
 }
 /*this is the stuff for the image slideshow*/
-button{
+button {
     border: none;
     cursor: pointer;
     color: white;
     background: none;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
 }
 
 .carousel-view {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  padding: 44px 0;
-  transition: all 0.25s ease-in;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 44px 0;
+    transition: all 0.25s ease-in;
 }
 
 .carousel-view .item-list {
-  max-width: 950px;
-  width: 70vw;
-  padding: 50px 10px;
-  display: flex;
-  gap: 48px;
-  scroll-behavior: smooth;
-  transition: all 0.25s ease-in;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-  overflow: auto;
-  scroll-snap-type: x mandatory;
+    max-width: 950px;
+    width: 70vw;
+    padding: 50px 10px;
+    display: flex;
+    gap: 48px;
+    scroll-behavior: smooth;
+    transition: all 0.25s ease-in;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    overflow: auto;
+    scroll-snap-type: x mandatory;
 }
-
