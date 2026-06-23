@@ -3,8 +3,7 @@
     <head>
         <title>Home of the Waterloo Warriors Band</title>
         <link rel="icon" href="images/not_transparent.webp" />
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="website.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
@@ -111,7 +110,7 @@
             <div class="mySlides w3-display-container w3-center">
                 <img src="images/parade_BnW.webp" style="width: 100%" />
                 <div class="w3-display-bottommiddle w3-container w3-text-yellow w3-padding-32 w3-hide-small">
-                    <h3 class="slideshow_caption">Catch us at:</h3>
+                    <h3 class="slideshow_caption">Catch us at...</h3>
                     <p class="slideshow_caption"><b>Parades around campus!</b></p>
                 </div>
             </div>
@@ -119,7 +118,7 @@
             <div class="mySlides w3-display-container w3-center">
                 <img src="images/Concert_BnW.webp" style="width: 100%" />
                 <div class="w3-display-bottommiddle w3-container w3-text-yellow w3-padding-32 w3-hide-small">
-                    <h3 class="slideshow_caption">Catch us at:</h3>
+                    <h3 class="slideshow_caption">Catch us at...</h3>
                     <p class="slideshow_caption"><b>Concert band's end of term concert!</b></p>
                 </div>
             </div>
@@ -184,11 +183,11 @@
                         </div>
                         <div class="w3-col m6 w3-large w3-padding-16 w3-center">
                             <strong>Full Band</strong><br />
-                            <i class="fa fa-clock" style="width: 30px"></i>Thursdays 6-7pm<br />
+                            <i class="fa fa-clock" style="width: 30px"></i>Thursdays 6–7 PM<br />
                         </div>
                         <div class="w3-col m6 w3-large w3-padding-16 w3-center">
                             <strong>Drumline</strong><br />
-                            <i class="fa fa-clock" style="width: 30px"></i>Wednesdays 6:30-8pm<br />
+                            <i class="fa fa-clock" style="width: 30px"></i>Wednesdays 6:30–8 PM<br />
                         </div>
                         <div class="w3-col m12 w3-margin-top w3-center">
                             <p class="w3-center w3-text-white">
@@ -197,7 +196,7 @@
                                     announcements.</i
                                 >
                             </p>
-                            <a href="https://discord.gg/Uynh5BpjZq" target="_blank" class="w3-large"
+                            <a href="https://discord.gg/7qhJSRvpN" target="_blank" class="w3-large"
                                 ><i class="fa-brands fa-discord" style="width: 30px"></i> Join the Discord server!</a
                             ><br />
                             <a href="https://forms.gle/oZPM54Z83CFfjJJ49" target="_blank" class="w3-large"
@@ -216,7 +215,7 @@
                         <p><strong>How do I become a full member?</strong></p>
                         <p>
                             Simply pay a 10$ termly membership fee, and attend at least 2 practices! 100% of membership
-                            fees go towards our instruments, equipment, and other band benefits
+                            fees go towards our instruments, equipment, and other band benefits.
                         </p>
 
                         <p><strong>Do I have to come to practice?</strong></p>
@@ -276,6 +275,18 @@
                         >
                     </div>
                     <div class="gallery-container">
+                        <div class="gallery-item">
+                            <a target="_blank" href="images/sweden.webp">
+                                <img
+                                    src="images/sweden.webp"
+                                    alt="Band in Lund, Sweden for the Lundakarneval, 2026"
+                                    width="600"
+                                    height="400"
+                                />
+                            </a>
+                            <div class="desc">Band in Lund, Sweden for the Lundakarneval, 2026</div>
+                        </div>
+                        
                         <div class="gallery-item">
                             <a target="_blank" href="images/htn2025.webp">
                                 <img
@@ -405,7 +416,7 @@
                 </p>
                 <p>
                     <strong>Discord:</strong>
-                    <a href="https://discord.gg/Uynh5BpjZq" target="_blank">https://discord.gg/Uynh5BpjZq</a>
+                    <a href="https://discord.gg/7qhJSRvpN" target="_blank">https://discord.gg/7qhJSRvpN</a>
                 </p>
             </div>
         </div>
@@ -415,7 +426,7 @@
             <a href="https://www.instagram.com/wlooband/ " target="_blank"
                 ><i class="fa-brands fa-instagram-square w3-hover-opacity"></i
             ></a>
-            <a href="https://discord.gg/Uynh5BpjZq" target="_blank"
+            <a href="https://discord.gg/7qhJSRvpN" target="_blank"
                 ><i class="fa-brands fa-discord w3-hover-opacity"></i
             ></a>
             <a href="https://www.youtube.com/@WaterlooWarriorsBand" target="_blank"
@@ -430,7 +441,7 @@
 
         <script>
             // Automatic Slideshow - change image every 3 seconds
-            var myIndex = 0;
+            var myIndex = -1;
             carousel();
 
             function carousel() {
@@ -439,11 +450,8 @@
                 for (i = 0; i < x.length; i++) {
                     x[i].style.display = "none";
                 }
-                myIndex++;
-                if (myIndex > x.length) {
-                    myIndex = 1;
-                }
-                x[myIndex - 1].style.display = "block";
+                myIndex = (myIndex + 1) % x.length;
+                x[myIndex].style.display = "block";
                 setTimeout(carousel, 3000);
             }
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# compress all pics from images-raw/ into images/ as .webp
+# compress all pics from images_raw/ into images/ as .webp
 
 set -e
 shopt -s globstar

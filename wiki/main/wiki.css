@@ -18,6 +18,9 @@ p {
 h1 {
     margin: 0;
 }
+ul {
+   list-style-position: inside;
+}
 .article a {
     color: #ffd500;
     text-decoration: none;
@@ -25,7 +28,10 @@ h1 {
 .sidetable {
     border: 1px solid black;
     border-collapse: collapse;
-    width: 200px;
+    width: 300px;
+    margin: 15px;
+    padding: 10px;
+    float: inline-end;
 }
 header {
     display: flex;
@@ -166,7 +172,7 @@ header {
     font-size: 15px;
     color: #ffd500;
 }
-.accordian {
+.accordion {
     display: flex;
     flex-direction: column;
     width: 137px;
@@ -176,15 +182,15 @@ header {
         0px 0px 2px black,
         0px 0px 2px black;
 }
-.accordian-item-summary {
+.accordion-item-summary {
     padding: 0;
     cursor: pointer;
 }
-.accordian-item-content {
+.accordion-item-content {
     padding: 0px;
 }
 .right-content {
-    flex: 4;
+    flex: 6;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -245,6 +251,7 @@ header {
 .regtable {
     border: 1px solid black;
     border-collapse: collapse;
+    padding: 5px;
 }
 .barlink {
     color: yellow;
@@ -446,4 +453,11 @@ body {
     to {
         opacity: 1;
     }
+}
+
+.dateCalculator {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+    gap: 16px;
+    padding: 16px;
 }

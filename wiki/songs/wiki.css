@@ -18,6 +18,9 @@ p {
 h1 {
     margin: 0;
 }
+ul {
+   list-style-position: inside;
+}
 .article a {
     color: #ffd500;
     text-decoration: none;
@@ -166,7 +169,7 @@ header {
     font-size: 15px;
     color: #ffd500;
 }
-.accordian {
+.accordion {
     display: flex;
     flex-direction: column;
     width: 137px;
@@ -176,15 +179,15 @@ header {
         0px 0px 2px black,
         0px 0px 2px black;
 }
-.accordian-item-summary {
+.accordion-item-summary {
     padding: 0;
     cursor: pointer;
 }
-.accordian-item-content {
+.accordion-item-content {
     padding: 0px;
 }
 .right-content {
-    flex: 4;
+    flex: 6;
     padding-left: 20px;
     padding-right: 20px;
 }

@@ -162,3 +162,82 @@ document.addEventListener("DOMContentLoaded", function () {
         event.stopPropagation();
     });
 });
+
+function getNumDays(year) {
+    const daysInFeb = (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) ? 29 : 28;
+    return [31, daysInFeb, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+}
+
+const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+function gregToWb() {
+    const data = document.querySelector("#gregDate1").value;
+    const startingDay = +document.querySelector("#firstDay").value;
+    if (data === "") {
+        document.getElementById("wbDate1").innerText = "Please enter a valid date!";
+    } else {
+        const ymd = data.split("-");
+        const year = String(Math.floor(+ymd[0] / 100) - 19) + String(+ymd[0] % 100).padStart(2, "0");
+        let month = Math.floor((+ymd[1] - 1) / 4) * 4;
+        let day = +ymd[2];
+        const numDays = getNumDays(+ymd[0]);
+        for (let i = month; i < +ymd[1] - 1; ++i) {
+            day += numDays[i];
+        }
+        if (startingDay < 1 || startingDay > numDays[month] || day < startingDay || !Number.isInteger(startingDay)) {
+            document.getElementById("wbDate1").innerText = "Please enter a valid starting day for classes!";
+        } else {
+            document.getElementById("wbDate1").innerText = `${year}${month + 1}-${day - startingDay + 1}`;
+        }
+    }
+}
+
+function wbToGreg() {
+    const data = document.querySelector("#wbDateYear").value;
+    if (data.length - +(data[0] === "-") < 4 || !Number.isInteger(+data)) {
+        document.getElementById("gregDate2").innerText = "Please enter a valid year/month (integer with at least 4 digits)!";
+    } else {
+        let century = (+data.slice(0, -3) + 19) * 100;
+        let bce = false;
+        if (century < 0) {
+            bce = true;
+            century *= -1;
+        }
+        const year = century + +data.slice(-3, -1);
+        let month = +data.slice(-1) - 1;
+        let day = +document.querySelector("#wbDateDay").value;
+        const startingDay = +document.querySelector("#firstDay").value;
+        const numDays = getNumDays(year);
+        if (!([0, 4, 8].includes(month))) {
+            document.getElementById("gregDate2").innerText = "Please enter a valid month (1, 5, or 9)!";
+        } else if (document.querySelector("#wbDateDay").value !== "" && (day < 1 || day > 153 || !Number.isInteger(day))) {
+            document.getElementById("gregDate2").innerText = "Please enter a valid day (integer between 1 and 153)!";
+        } else if (document.querySelector("#wbDateDay").value !== "" && (startingDay < 1 || startingDay > numDays[month] || !Number.isInteger(startingDay))) {
+            document.getElementById("gregDate2").innerText = "Please enter a valid starting day for classes!";
+        } else {
+            if (document.querySelector("#wbDateDay").value === "") {
+                switch (month) {
+                    case 0:
+                        document.getElementById("gregDate2").innerText = `Winter ${year}` + (bce ? " BCE" : "");
+                        break;
+                    case 4:
+                        document.getElementById("gregDate2").innerText = `Spring ${year}` + (bce ? " BCE" : "");
+                        break;
+                    case 8:
+                        document.getElementById("gregDate2").innerText = `Fall ${year}` + (bce ? " BCE" : "");
+                        break;
+                    default:
+                        document.getElementById("gregDate2").innerText = "Unknown month error, please try again!";
+                        break;
+                }
+            } else {
+                day = day + startingDay - 1;
+                while (day > numDays[month]) {
+                    day -= numDays[month];
+                    month = (month + 1) % 12;
+                }
+                document.getElementById("gregDate2").innerText = `${monthNames[month]} ${day}, ${year}` + (bce ? " BCE" : "");
+            }
+        }
+    }
+}
