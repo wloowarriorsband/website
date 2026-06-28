@@ -198,10 +198,12 @@ function wbToGreg() {
         document.getElementById("gregDate2").innerText = "Please enter a valid year/month (integer with at least 4 digits)!";
     } else {
         let century = (+data.slice(0, -3) + 19) * 100;
-        let bce = false;
+        let bce = false, ce = false;
         if (century < 0) {
             bce = true;
-            century *= -1;
+            century = -(century + 100);
+        } else if (century < 1700) {
+            ce = true;
         }
         const year = century + +data.slice(-3, -1);
         let month = +data.slice(-1) - 1;
@@ -214,17 +216,20 @@ function wbToGreg() {
             document.getElementById("gregDate2").innerText = "Please enter a valid day (integer between 1 and 153)!";
         } else if (document.querySelector("#wbDateDay").value !== "" && (startingDay < 1 || startingDay > numDays[month] || !Number.isInteger(startingDay))) {
             document.getElementById("gregDate2").innerText = "Please enter a valid starting day for classes!";
+        } else if (year === 0) {
+            document.getElementById("gregDate2").innerHTML =
+`<a href="https://en.wikipedia.org/wiki/Year_zero#:~:text=Year%20zero%20does%20not%20exist%20in%20the%20Anno%20Domini%20(AD)%20calendar%20year%20system%20commonly%20used%20to%20number%20years%20in%20the%20Gregorian%20calendar%20and%20Julian%20calendar.%20Instead%2C%20AD%201%20is%20treated%20as%20the%20epoch%2C%20so%20that%20the%20year%201%20BC%20is%20followed%20directly%20by%20year%20AD%201." target="_blank">Did you know that the year 0 doesn't exist in the AD system?</a>`;
         } else {
             if (document.querySelector("#wbDateDay").value === "") {
                 switch (month) {
                     case 0:
-                        document.getElementById("gregDate2").innerText = `Winter ${year}` + (bce ? " BCE" : "");
+                        document.getElementById("gregDate2").innerText = `Winter ${year}` + (bce ? " BCE" : "") + (ce ? " CE" : "");
                         break;
                     case 4:
-                        document.getElementById("gregDate2").innerText = `Spring ${year}` + (bce ? " BCE" : "");
+                        document.getElementById("gregDate2").innerText = `Spring ${year}` + (bce ? " BCE" : "") + (ce ? " CE" : "");
                         break;
                     case 8:
-                        document.getElementById("gregDate2").innerText = `Fall ${year}` + (bce ? " BCE" : "");
+                        document.getElementById("gregDate2").innerText = `Fall ${year}` + (bce ? " BCE" : "") + (ce ? " CE" : "");
                         break;
                     default:
                         document.getElementById("gregDate2").innerText = "Unknown month error, please try again!";
@@ -236,7 +241,7 @@ function wbToGreg() {
                     day -= numDays[month];
                     month = (month + 1) % 12;
                 }
-                document.getElementById("gregDate2").innerText = `${monthNames[month]} ${day}, ${year}` + (bce ? " BCE" : "");
+                document.getElementById("gregDate2").innerText = `${monthNames[month]} ${day}, ${year}` + (bce ? " BCE" : "") + (ce ? " CE" : "");
             }
         }
     }
