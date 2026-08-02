@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { term: "band house", site: "../cons/index.html#house" },
         { term: "band lounge time", site: "../stories/index.html#blt" },
         { term: "blt", site: "../stories/index.html#blt" },
-        { term: "david greenburg", site: "../govern/index.html#dg" },
+        { term: "david greenberg", site: "../govern/index.html#dg" },
         { term: "drumline ontario", site: "../stories/index.html#do" },
         { term: "death march to elora", site: "../stories/index.html#dme" },
         { term: "dont worry be happy", site: "../songs/index.html#dwbh" },
