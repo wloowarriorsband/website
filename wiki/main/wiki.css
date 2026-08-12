@@ -252,6 +252,8 @@ header {
     border: 1px solid black;
     border-collapse: collapse;
     padding: 5px;
+    text-align: center;
+    justify-self: center;
 }
 .barlink {
     color: yellow;
@@ -460,4 +462,10 @@ body {
     grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
     gap: 16px;
     padding: 16px;
+}
+
+.regtable-grid {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+    gap: 16px;
 }
